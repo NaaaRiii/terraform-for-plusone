@@ -1,0 +1,13 @@
+/.terraform.tfvars
+
+/.MyKeyPairOne.pem
+
+/.subnets.json
+
+/.terraform.tfstate
+
+/.terraform.tfstate.backup
+
+.terraform/
+
+/.secrets.tf
