@@ -5,6 +5,8 @@ resource "aws_ecs_service" "plusone_service" {
   launch_type     = "FARGATE"
 
   task_definition = aws_ecs_task_definition.plusone_task.arn
+  platform_version = "1.4.0"
+  enable_execute_command = true
 
   network_configuration {
     subnets          = [
