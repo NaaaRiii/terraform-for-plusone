@@ -101,8 +101,8 @@ resource "aws_security_group" "rds_sg" {
     to_port           = 3306
     protocol          = "tcp"
         security_groups = [
-      aws_security_group.ecs_task_sg.id,
-      aws_security_group.bastion_sg.id
+      aws_security_group.ecs_task_sg.id
+      #aws_security_group.bastion_sg.id
     ]
   }
 
@@ -162,22 +162,22 @@ resource "aws_security_group" "alb_sg" {
 #bastion_ec2
 ########################################################################
 
-resource "aws_security_group" "bastion_sg" {
-  name   = "bastion-sg"
-  vpc_id = aws_vpc.main.id
+#resource "aws_security_group" "bastion_sg" {
+#  name   = "bastion-sg"
+#  vpc_id = aws_vpc.main.id
 
-  ingress {
-    description = "SSH from office IP"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["49.98.115.117/32"] //https://www.cman.jp/network/support/go_access.cgi
-  }
+#  ingress {
+#    description = "SSH from office IP"
+#    from_port   = 22
+#    to_port     = 22
+#    protocol    = "tcp"
+#    cidr_blocks = ["49.98.232.184/32"] //https://www.cman.jp/network/support/go_access.cgi
+#  }
 
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
+#  egress {
+#    from_port   = 0
+#    to_port     = 0
+#    protocol    = "-1"
+#    cidr_blocks = ["0.0.0.0/0"]
+#  }
+#}
