@@ -11,3 +11,11 @@
 .terraform/
 
 /.secrets.tf
+
+インフラ構成図.drawio
+
+インフラ構成図2.drawio
+
+.terraform.tfstate.lock.info
+
+.terraform.lock.hcl
