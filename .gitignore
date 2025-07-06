@@ -60,3 +60,5 @@ secrets.tf
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+/.terraform.tfvars
