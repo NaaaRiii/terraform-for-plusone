@@ -1,0 +1,15 @@
+# Database Configuration
+# Replace with your actual database credentials
+DATABASE_DEV_PASSWORD = "your_database_password_here"
+DATABASE_DEV_USER = "your_database_user_here"
+
+# ECR Image Configuration
+# Replace with your actual ECR repository URL
+ecr_image = "your-account-id.dkr.ecr.ap-northeast-1.amazonaws.com/your-repository:latest"
+
+# Environment Configuration
+environment = "production"
+
+# Domain Configuration
+domain_name = "your-domain.com"
+api_domain_name = "api.your-domain.com" 
