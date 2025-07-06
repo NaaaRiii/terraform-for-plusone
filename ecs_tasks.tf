@@ -34,6 +34,18 @@ resource "aws_ecs_task_definition" "plusone_task" {
       {
         name      = "DB_USER"
         valueFrom = data.aws_secretsmanager_secret_version.db_user.arn
+      },
+      {
+        name      = "SECRET_KEY_BASE"
+        valueFrom = data.aws_secretsmanager_secret_version.secret_key_base.arn
+      },
+      {
+        name      = "COGNITO_USER_POOL_ID"
+        valueFrom = data.aws_secretsmanager_secret_version.cognito_user_pool_id.arn
+      },
+      {
+        name      = "COGNITO_APP_CLIENT_ID"
+        valueFrom = data.aws_secretsmanager_secret_version.cognito_app_client_id.arn
       }
     ],
 

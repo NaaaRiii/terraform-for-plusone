@@ -21,3 +21,19 @@ data "aws_secretsmanager_secret" "secret_key_base" {
 data "aws_secretsmanager_secret_version" "secret_key_base" {
   secret_id = data.aws_secretsmanager_secret.secret_key_base.id
 }
+
+data "aws_secretsmanager_secret" "cognito_user_pool_id" {
+  name = "prod/plusone/cognito_user_pool_id"
+}
+
+data "aws_secretsmanager_secret_version" "cognito_user_pool_id" {
+  secret_id = data.aws_secretsmanager_secret.cognito_user_pool_id.id
+}
+
+data "aws_secretsmanager_secret" "cognito_app_client_id" {
+  name = "prod/plusone/cognito_app_client_id"
+}
+
+data "aws_secretsmanager_secret_version" "cognito_app_client_id" {
+  secret_id = data.aws_secretsmanager_secret.cognito_app_client_id.id
+}
