@@ -66,3 +66,7 @@ Thumbs.db
 .terraform.tfstate
 
 .terraform.tfvars
+
+.terraform.tfstate.1751889894.backup
+
+.terraform.tfstate.backup
