@@ -2,7 +2,9 @@
 *.tfstate
 *.tfstate.*
 .terraform/
-.terraform.lock.hcl
+# Note: .terraform.lock.hcl should typically be committed to ensure consistent provider versions
+# Uncomment the line below only if you have specific reasons to ignore it
+# .terraform.lock.hcl
 .terraform.tfstate.lock.info
 
 # Local .terraform directories
@@ -60,5 +62,3 @@ secrets.tf
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-/.terraform.tfvars
