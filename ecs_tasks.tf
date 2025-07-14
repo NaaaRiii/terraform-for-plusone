@@ -23,7 +23,7 @@ resource "aws_ecs_task_definition" "plusone_task" {
       environment = [
         { name = "RAILS_ENV",     value = "production" },
         { name = "DB_NAME",       value = "plusonedb_production" },
-        { name = "RDS_ENDPOINT",  value = "terraform-20250203085926710300000003.c3g84cqawa82.ap-northeast-1.rds.amazonaws.com" },
+        { name = "RDS_ENDPOINT",  value = "terraform-2025070808344858690000000d.c3g84cqawa82.ap-northeast-1.rds.amazonaws.com" },
       ],
 
       secrets = [
