@@ -10,11 +10,11 @@ resource "aws_ecs_service" "plusone_service" {
 
   network_configuration {
     subnets          = [
-      aws_subnet.private_subnet_a.id,
-      aws_subnet.private_subnet_c.id
+      aws_subnet.public_a.id,
+      aws_subnet.public_c.id
     ]
     security_groups  = [aws_security_group.ecs_task_sg.id]
-    assign_public_ip = false
+    assign_public_ip = true
   }
 
   load_balancer {
