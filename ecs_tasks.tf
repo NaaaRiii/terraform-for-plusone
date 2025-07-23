@@ -46,6 +46,14 @@ resource "aws_ecs_task_definition" "plusone_task" {
       {
         name      = "COGNITO_APP_CLIENT_ID"
         valueFrom = data.aws_secretsmanager_secret_version.cognito_app_client_id.arn
+      },
+      {
+        name      = "GUEST_EMAIL"
+        valueFrom = data.aws_secretsmanager_secret_version.guest_email.arn
+      },
+      {
+        name      = "GUEST_PASSWORD"
+        valueFrom = data.aws_secretsmanager_secret_version.guest_password.arn
       }
     ],
 

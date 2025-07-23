@@ -37,3 +37,19 @@ data "aws_secretsmanager_secret" "cognito_app_client_id" {
 data "aws_secretsmanager_secret_version" "cognito_app_client_id" {
   secret_id = data.aws_secretsmanager_secret.cognito_app_client_id.id
 }
+
+data "aws_secretsmanager_secret" "guest_email" {
+  name = "prod/plusone/guest_email"
+}
+
+data "aws_secretsmanager_secret_version" "guest_email" {
+  secret_id = data.aws_secretsmanager_secret.guest_email.id
+}
+
+data "aws_secretsmanager_secret" "guest_password" {
+  name = "prod/plusone/guest_password"
+}
+
+data "aws_secretsmanager_secret_version" "guest_password" {
+  secret_id = data.aws_secretsmanager_secret.guest_password.id
+}
