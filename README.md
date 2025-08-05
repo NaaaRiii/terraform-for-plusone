@@ -3,10 +3,12 @@ PlusONEアプリのインフラをAWSで構築しました。
 
 
 下記リンクからアクセスできます。
-https://plusoneup.net
 
-フロントエンド：https://github.com/NaaaRiii/RoulettePopup
-バックエンド：https://github.com/NaaaRiii/plus_one
+**アプリケーション**: https://plusoneup.net
+
+**リポジトリ**:
+- フロントエンド: https://github.com/NaaaRiii/RoulettePopup
+- バックエンド: https://github.com/NaaaRiii/plus_one
 
 ## インフラ構成図
 

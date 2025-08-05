@@ -52,7 +52,12 @@ secrets.tf
 *.swp
 *.swo
 
-# OS generated files
+terraform-for-plusone.git/
+
+# Documentation and planning files
+docs/
+plan/
+
 .DS_Store
 .DS_Store?
 ._*
