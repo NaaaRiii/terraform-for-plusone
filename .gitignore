@@ -76,3 +76,13 @@ Thumbs.db
 
 /.terraform.tfvars
 
+CLAUDE.md
+
+lambda/rds-scheduler.zip
+
+# Lambda build artifacts and vendored deps
+lambda/rds-scheduler/*
+!lambda/rds-scheduler/lambda_function.py
+!lambda/rds-scheduler/requirements.txt
+
+lambda確認.md
