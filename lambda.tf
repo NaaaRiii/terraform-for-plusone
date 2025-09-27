@@ -131,6 +131,7 @@ resource "aws_cloudwatch_event_rule" "rds_start_schedule" {
   name                = "rds-start-schedule"
   description         = "RDS起動スケジュール - 平日9:50 JST"
   schedule_expression = "cron(50 0 ? * MON-FRI *)"  # UTC 0:50 = JST 9:50
+  state               = "DISABLED"
 
   tags = {
     Name = "RDS Start Schedule"
@@ -158,6 +159,7 @@ resource "aws_cloudwatch_event_rule" "rds_stop_schedule" {
   name                = "rds-stop-schedule"
   description         = "RDS停止スケジュール - 平日18:00 JST"
   schedule_expression = "cron(0 9 ? * MON-FRI *)"   # UTC 9:00 = JST 18:00
+  state               = "DISABLED"
 
   tags = {
     Name = "RDS Stop Schedule"
